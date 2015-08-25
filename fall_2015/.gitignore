@@ -10,3 +10,5 @@
 *.xlsx
 *Evolution3e*
 slides
+~$*
+*.png
