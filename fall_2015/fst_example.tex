@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\begin{document}
+\pagestyle{empty}
+
+\section*{$F_{ST}$ example
+\footnote{Example borrowed from John Hawkes at \url{http://johnhawks.net}}}
+
+Gene A is a key part of
+the melanin expression pathway, which
+contributes to
+skin and hair pigmentation. A SNP that is strongly associated with lighter skin
+pigment in Europe has two alleles, A and G, with G being associated with light
+skin, at a frequency of 100\% in European-Americans. The SNP varies in frequency
+in populations in the Americas with mixed African and American Indian ancestry. A sample in Mexico had 38\% A and 62\% G; in Puerto Rico the frequencies were 59\% A and 41\% G, and a sample of African-Americans from Charleston had 19\% A with 81\% G. What is the $F_{ST}$ in this example?
+
+\vspace{1em}
+
+To estimate $F_{ST}$, you can do the following:
+
+\begin{itemize}
+\item{Find the allele frequencies for each subpopulation}
+\item{Find the average allele frequencies for the total population}
+\item{Calculate the heterozygosity for each subpopulation}
+\item{Calculate the average of the subpopulation heterozygosities.  This is
+$H_S$}.
+\item{Calculate the heterozygosity based on the total population allele
+frequencies.  This is $H_T$}.
+\item{Calculate $F_{ST}$}
+\end{itemize}
+
+\begin{equation*}
+F_{ST} = \frac{H_T-H_S}{H_T}
+\end{equation*}
+
+\vspace{1em}
+The data are below, for each population:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+Population &  A & G \\
+\hline
+Mexican & 0.38 & 0.62 \\
+Puerto Rico & 0.59 & 0.41 \\
+African-American & 0.19 & 0.81 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Questions}
+\begin{itemize}
+\item{Given this value for $F_{ST}$, what can you say about the genetic similarity of
+these populations?  Are they alike?  Very alike?  Somewhat dissimilar?  Very
+dissimilar?}
+\item{What can you say about the overall genetic diversity of these
+populations?}
+\item{We've previously defined $F_{ST}$ as $\frac{V_q}{\bar{p}(1-\bar{p})}$. 
+Can you
+think of how the formulation of $F_{ST}$ above is related to this?}
+\end{itemize}
+\end{document}
